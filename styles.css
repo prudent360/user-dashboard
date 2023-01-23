@@ -154,7 +154,7 @@ nav {
 .commission-card,
 .commission-card-1 {
   background: var(--mainWhite);
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: var(--darkShadow);
 }
 .commission-header {
