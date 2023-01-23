@@ -1,0 +1,172 @@
+/* variables */
+
+:root {
+  --primaryColor: #d46c03;
+  --mainBlack: #222;
+  --mainWhite: #fff;
+  --darkWhite: #f5f5f5;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.2rem;
+  --walletColor: #2e2cdf;
+  --darkShadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  --MoredarkShadow: 0 3px 10px rgb(0 0 0 / 0.5);
+}
+
+/* 
+ ===============
+ Global styles
+ ===============
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Fira Code', monospace; */
+  font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  background: var(--darkWhite);
+  color: var(--mainBlack);
+  text-transform: capitalize;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+/* headings */
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 1.25rem;
+}
+h1 {
+  font-size: 3rem;
+}
+
+.btn {
+  padding: 5px;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+  border: 2px solid orange;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.section-top {
+  margin: 3rem;
+}
+.title {
+  text-align: center;
+}
+
+/* profile container */
+.profile-container {
+  width: 80vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  /* display: grid; */
+}
+
+/* wallet-stats */
+.wallet-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  justify-self: center;
+}
+
+.wallet-title {
+  margin: 5px auto;
+}
+.stat-card {
+  /* display: grid; */
+  color: var(--mainWhite);
+  background: var(--walletColor);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: var(--mainTransition);
+}
+.stat-card:hover {
+  box-shadow: var(--MoredarkShadow);
+  transform: scale(1.02);
+}
+@media screen and (min-width: 768px) {
+  .wallet-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.commission-details {
+  display: grid;
+  margin-top: 2rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  /* grid-template-columns: repeat(3, auto-fill); */
+}
+.commission-card {
+  background: var(--mainWhite);
+  border-radius: 5px;
+  box-shadow: var(--darkShadow);
+}
+.commission-header {
+  display: grid;
+  text-align: center;
+  background: var(--darkWhite);
+}
+.comm-title {
+  text-align: center;
+  padding: 0.5rem;
+  color: gray;
+}
+.commission-body {
+  padding: 0.5rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+@media screen and (min-width: 768px) {
+  .commission-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.earnings,
+.indicator {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  /* color: var(--walletColor); */
+}
+.indicator {
+  color: rgb(152, 221, 49);
+}
+hr {
+  /* border: 0.5px solid yellow; */
+}
+.withdraw-btn {
+  background: orange;
+  color: var(--mainBlack);
+  letter-spacing: var(--mainSpacing);
+  cursor: pointer;
+  transition: var(--mainTransition);
+  display: inline-block;
+  padding: 0.5rem;
+  margin: auto;
+}
+.withdraw-btn:hover {
+  background: var(--mainWhite);
+  border: 2px solid orange;
+}

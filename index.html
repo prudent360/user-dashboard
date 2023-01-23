@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Profile</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="./fontawesome-free-5.9.0-web/css/all.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="section-top">
+      <div class="title">
+        <h2>welcome to your dashboard</h2>
+      </div>
+    </section>
+    <section class="profile-container">
+      <!-- wallet stats -->
+      <div class="wallet-stats">
+        <!-- single card -->
+        <div class="stat-card">
+          <div class="wallet-title">
+            <h3>unpaid earnings</h3>
+          </div>
+          <hr />
+          <h3 class="earnings">N300,000.00</h3>
+          <button class="btn withdraw-btn">Withdraw now</button>
+        </div>
+        <!-- end of single card -->
+        <!-- single card -->
+        <div class="stat-card">
+          <div class="wallet-title">
+            <h3>Paid Balance:</h3>
+          </div>
+          <hr />
+          <h3 class="earnings">N300,000.00</h3>
+          <button class="btn withdraw-btn">view balance</button>
+        </div>
+        <!-- end of single card -->
+      </div>
+      <!-- end of wallet stats -->
+      <div class="commission-details">
+        <!-- single card -->
+        <article class="commission-card">
+          <div class="commission-header">
+            <h3 class="comm-title">unpaid commission</h3>
+          </div>
+          <div class="commission-body">
+            <span class="earnings"
+              ><i class="fab fa-bitcoin"></i> 200,000.00</span
+            >
+            <span class="indicator">13%</span>
+          </div>
+        </article>
+        <!-- end of single card -->
+        <!-- single card -->
+        <article class="commission-card">
+          <div class="commission-header">
+            <h3 class="comm-title">total commission</h3>
+          </div>
+          <div class="commission-body">
+            <span class="earnings"
+              ><i class="fab fa-bitcoin"></i> 1,000,000.00</span
+            >
+            <span class="indicator">40%</span>
+          </div>
+          <div class="commision-footer"></div>
+        </article>
+        <!-- end of single card -->
+        <!-- single card -->
+        <article class="commission-card">
+          <div class="commission-header">
+            <h3 class="comm-title">earnings today</h3>
+          </div>
+          <div class="commission-body">
+            <span class="earnings"
+              ><i class="fab fa-bitcoin"></i> 100,000.00</span
+            >
+            <span class="indicator">13%</span>
+          </div>
+        </article>
+        <!-- end of single card -->
+      </div>
+    </section>
+  </body>
+</html>
