@@ -112,6 +112,9 @@ h1 {
   margin-top: 2rem;
   row-gap: 2rem;
   column-gap: 2rem;
+  grid-template-areas:
+    'a b'
+    'c c';
   /* grid-template-columns: repeat(3, auto-fill); */
 }
 .commission-card {
