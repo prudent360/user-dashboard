@@ -63,18 +63,40 @@ h1 {
 nav {
   background-color: var(--mainWhite);
   color: var(--mainBlack);
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: right;
   padding: 2rem 20px;
-  box-shadow: var(--darkShadow);
+  /* box-shadow: var(--darkShadow); */
 }
 
 .nav-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-items: right;
 }
+.user-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+}
+.notification,
+.country,
+.user-avatar {
+  margin-left: 2rem;
+}
+.country {
+  color: red;
+}
+.notification {
+  color: #2e2cdf;
+}
+.user-avatar {
+  color: #2e2cdf;
+  background: var(--darkWhite);
+}
+
 .section-top {
   margin: 3rem;
 }
