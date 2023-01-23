@@ -60,7 +60,21 @@ h1 {
   border-radius: 5px;
   text-transform: capitalize;
 }
+nav {
+  background-color: var(--mainWhite);
+  color: var(--mainBlack);
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 2rem 20px;
+  box-shadow: var(--darkShadow);
+}
 
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: right;
+}
 .section-top {
   margin: 3rem;
 }
